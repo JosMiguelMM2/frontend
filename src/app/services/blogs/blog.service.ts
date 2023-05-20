@@ -15,6 +15,6 @@ export class BlogService {
     // const token = localStorage.getItem('token')
     // const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`)
     // return this.http.get(`${this.URLbackend}/blog`, { headers: headers });
-    return this.http.get(`${this.URLbackend}/blog`);
+    return this.http.get(`https://backend-production-7700.up.railway.app//blog`);
   }
 }
