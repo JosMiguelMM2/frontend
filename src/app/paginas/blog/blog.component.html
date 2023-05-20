@@ -1,0 +1,18 @@
+<div class="container cont">
+  <div class="row">
+    <div class="col-md-8" *ngFor="let post of this.datos.slice(0, numblo) ">
+      <div class="blog-post">
+        <h2 class="blog-post-title">{{post.p_title}}</h2>
+        <p class="blog-post-meta">Fecha de publicación: {{post.p_created_at}} por <a href="#">{{post.p_iduser}}</a></p>
+        <p class="blog-post-meta">Fecha de actualización : {{post.p_updated_at}} y fue hecho por <a href="#">{{post.p_iduser}}</a></p>
+
+        <p>{{post.p_content}}</p>
+      </div>
+   </div>
+    <button class="btn btn-primary botonmas" *ngIf="numblo < datos.length" (click)="aumenBlogs()" >Cargar más</button>
+
+
+
+  </div>
+</div>
+
