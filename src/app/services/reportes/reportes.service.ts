@@ -40,6 +40,6 @@ export class ReportesService {
 
 
   getreportlocation():Observable<any>{
-    return this.http.get(`${this.ulrr}/report/localizacionreport`);
+    return this.http.get(`https://backend-production-7700.up.railway.app/report/localizacionreport`);
   }
 }
